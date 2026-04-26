@@ -1,0 +1,520 @@
+<mxfile host="app.diagrams.net" modified="2024-03-20T12:00:00.000Z" agent="Expert UML Architect" version="21.0.0" type="device">
+  <diagram id="AdwellClassDiagram" name="Adwell Advertising System">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Class: Employee -->
+        <mxCell id="2" value="Employee" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="- name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="- startDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="- employeeNumber: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: TechnicalStaff -->
+        <mxCell id="10" value="TechnicalStaff" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="- skillArea: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="- availability: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="+ assessCampaign(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: AdministrativeStaff -->
+        <mxCell id="20" value="AdministrativeStaff" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="180" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="- qualification: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="+ recordCampaign(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: Customer -->
+        <mxCell id="30" value="Customer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="20" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="- companyName: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="- address: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="- faxNumber: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="- contactPerson: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30">
+          <mxGeometry y="104" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: Campaign -->
+        <mxCell id="40" value="Campaign" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="250" width="180" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="- title: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="- requirements: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="- startDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="- endDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="104" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="- budgetCost: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="130" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="- status: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+          <mxGeometry y="156" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: Advertisement -->
+        <mxCell id="50" value="Advertisement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="550" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="- title: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="- targetDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="- estimatedCost: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="- actualCost: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="104" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: NewspaperAdvertisement -->
+        <mxCell id="60" value="NewspaperAdvertisement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="750" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="- newspaper: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="- placement: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="- date: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="- repeatDates: List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="60">
+          <mxGeometry y="104" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: WebsiteAdvertisement -->
+        <mxCell id="70" value="WebsiteAdvertisement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="750" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="71" value="- websiteProvider: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="- startDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="- endDate: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Class: NewspaperCompany -->
+        <mxCell id="80" value="NewspaperCompany" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="750" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="81" value="- name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="80">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <!-- Inheritance: TechnicalStaff -> Employee -->
+        <mxCell id="100" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="10" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Inheritance: AdministrativeStaff -> Employee -->
+        <mxCell id="101" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.75;entryY=1;" edge="1" parent="1" source="20" target="2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Association: Customer -> Campaign -->
+        <mxCell id="102" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="40" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102_L1" value="0..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="102">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102_L2" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="102">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Association: AdminStaff -> Campaign -->
+        <mxCell id="103" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="20" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103_L1" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="103">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103_L2" value="0..*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="103">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Association: TechStaff -> Campaign -->
+        <mxCell id="104" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;entryX=0;entryY=0.75;" edge="1" parent="1" source="10" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104_L1" value="1..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="104">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104_L2" value="0..*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="104">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Composition: Campaign -> Advertisement -->
+        <mxCell id="105" style="endArrow=diamond;endFill=1;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="50" target="40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="105_L1" value="1..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="105">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="105_L2" value="1" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="105">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Inheritance: NewspaperAdv -> Advertisement -->
+        <mxCell id="106" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="60" target="50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Inheritance: WebsiteAdv -> Advertisement -->
+        <mxCell id="107" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.75;entryY=1;" edge="1" parent="1" source="70" target="50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Association: NewspaperCompany -> NewspaperAdv -->
+        <mxCell id="108" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="80" target="60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="108_L1" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="108">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="108_L2" value="0..*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="108">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+
+<diagram id="AdwellActivityDiagram" name="Adwell Campaign Lifecycle">
+<mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+<!--  Start Node  -->
+<mxCell id="2" value="" style="ellipse;shape=doubleEllipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;" vertex="1" parent="1">
+<mxGeometry x="390" y="20" width="30" height="30" as="geometry"/>
+</mxCell>
+<!--  Actions  -->
+<mxCell id="3" value="Customer proposes campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="90" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="4" value="Administrative Staff records campaign details" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="190" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="5" value="Technical Staff assess proposed campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="290" width="120" height="60" as="geometry"/>
+</mxCell>
+<!--  Decision: Satisfactory?  -->
+<mxCell id="6" value="Satisfactory?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="365" y="390" width="80" height="80" as="geometry"/>
+</mxCell>
+<mxCell id="7" value="Technical Staff advise against campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="540" y="400" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="8" value="Discarded Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="540" y="500" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="9" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+<mxGeometry x="585" y="600" width="30" height="30" as="geometry"/>
+</mxCell>
+<mxCell id="10" value="Recommended Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="510" width="120" height="60" as="geometry"/>
+</mxCell>
+<!--  Decision: Revision?  -->
+<mxCell id="11" value="Revision needed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="365" y="610" width="80" height="80" as="geometry"/>
+</mxCell>
+<mxCell id="12" value="Customer requests changes & Technical Staff approve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="140" y="620" width="140" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="13" value="Customer commissions campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="730" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="14" value="Commissioned Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="830" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="15" value="Technical Staff produce first advertisements" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="930" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="16" value="Underway Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="1030" width="120" height="60" as="geometry"/>
+</mxCell>
+<!--  Decision: Unhappy?  -->
+<mxCell id="17" value="Customer unhappy?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="365" y="1130" width="80" height="80" as="geometry"/>
+</mxCell>
+<mxCell id="18" value="Stop campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="540" y="1140" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="19" value="Stopped Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="540" y="1240" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="20" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+<mxGeometry x="585" y="1340" width="30" height="30" as="geometry"/>
+</mxCell>
+<mxCell id="21" value="Customer makes final payment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="1250" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="22" value="Completed Campaign" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+<mxGeometry x="345" y="1350" width="120" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="23" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+<mxGeometry x="390" y="1450" width="30" height="30" as="geometry"/>
+</mxCell>
+<!--  Edges  -->
+<mxCell id="e1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="6">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<!--  Satisfactory? No  -->
+<mxCell id="e5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="7">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L1" value="No" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e5">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e6" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="9">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<!--  Satisfactory? Yes  -->
+<mxCell id="e8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="10">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L2" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e8">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e9" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="11">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<!--  Revision? Yes  -->
+<mxCell id="e10" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="12">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L3" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e10">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e11" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="10">
+<mxGeometry relative="1" as="geometry">
+<Array as="points">
+<mxPoint x="210" y="540"/>
+</Array>
+</mxGeometry>
+</mxCell>
+<!--  Revision? No  -->
+<mxCell id="e12" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="13">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L4" value="No" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e12">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e13" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="14">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e14" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="15">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e15" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="16">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e16" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="16" target="17">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<!--  Unhappy? Yes  -->
+<mxCell id="e17" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="17" target="18">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L5" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e17">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e18" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="19">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e19" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="19" target="20">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<!--  Unhappy? No  -->
+<mxCell id="e20" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="17" target="21">
+<mxGeometry relative="1" as="geometry">
+<mxCell id="L6" value="No" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="e20">
+<mxGeometry x="-0.2" relative="1" as="geometry"/>
+</mxCell>
+</mxGeometry>
+</mxCell>
+<mxCell id="e21" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="21" target="22">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="e22" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="22" target="23">
+<mxGeometry relative="1" as="geometry"/>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+
+
+<diagram id="AdwellUseCase" name="Adwell Advertising System">
+<mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+<!--  System Boundary  -->
+<mxCell id="100" value="Adwell Advertising Management System" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=30;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="220" y="20" width="380" height="800" as="geometry"/>
+</mxCell>
+<!--  Use Cases  -->
+<mxCell id="10" value="Record Campaign Details" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="50" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="11" value="Manage Communication Exchanges" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="120" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="12" value="Assess Proposed Campaign" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="190" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="13" value="Recommend or Discard Campaign" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="260" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="14" value="Revise Campaign Requirements" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="330" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="15" value="Commission Campaign" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="400" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="16" value="Produce Advertisements" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="470" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="17" value="Stop Campaign" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="540" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="18" value="Process Final Payment" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="610" width="160" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="19" value="Provide Placement Availability" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="100">
+<mxGeometry x="110" y="680" width="160" height="60" as="geometry"/>
+</mxCell>
+<!--  Actors  -->
+<mxCell id="7" value="Employee" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="40" y="200" width="30" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="2" value="Administrative Staff" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="40" y="60" width="30" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="3" value="Technical Staff" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="40" y="340" width="30" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="4" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="40" y="520" width="30" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="5" value="Newspaper Company" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="720" y="650" width="30" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="6" value="Website Provider" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+<mxGeometry x="720" y="750" width="30" height="60" as="geometry"/>
+</mxCell>
+<!--  Generalization (Staff are Employees)  -->
+<mxCell id="20" value="" style="endArrow=block;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="2" target="7">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="21" value="" style="endArrow=block;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="3" target="7">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<!--  Associations  -->
+<!--  Admin Staff  -->
+<mxCell id="22" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="2" target="10">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="2" target="11">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<!--  Tech Staff  -->
+<mxCell id="24" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="3" target="11">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="25" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="3" target="12">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="3" target="13">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="27" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="3" target="14">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="3" target="16">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<!--  Customer  -->
+<mxCell id="29" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="4" target="14">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="30" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="4" target="15">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="31" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="4" target="17">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="32" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="4" target="18">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<!--  External Providers  -->
+<mxCell id="33" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="5" target="19">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="34" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="6" target="19">
+<mxGeometry width="50" height="50" relative="1" as="geometry"/>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+
+</mxfile>
